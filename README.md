@@ -7,7 +7,7 @@ The objective of this project is to enhance the performance and user experience 
 ```
 📁 Data_Analysis_Travel-Aggregator-Analysis
 │── 📂 data               # Dataset files
-│── 📂 notebook          # Jupyter notebook for EDA 
+│── 📂 notebook           # Jupyter notebook for EDA 
 │── 📜 README.md          # Project documentation
 │── 📜 requirements.txt   # Dependencies
 
