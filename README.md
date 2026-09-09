@@ -1,4 +1,18 @@
+<div align="center">
+
 # 🌍 Trip Away : Travel Aggregator Analysis
+
+<br>
+
+<a href="#exploratory-data-analysis"><img src="https://img.shields.io/badge/Exploratory_Data_Analysis-4A90E2?style=for-the-badge"></a>
+<a href="#outlier-detection"><img src="https://img.shields.io/badge/Outlier_Detection-D0021B?style=for-the-badge"></a>
+<a href="#funnel-analysis"><img src="https://img.shields.io/badge/Funnel_Analysis-50C878?style=for-the-badge"></a>
+<a href="#segmentation"><img src="https://img.shields.io/badge/Segmentation-F5A623?style=for-the-badge"></a>
+<a href="#behavioral-analytics"><img src="https://img.shields.io/badge/Behavioral_Analytics-7ED321?style=for-the-badge"></a>
+<a href="#business-intelligence-thinking"><img src="https://img.shields.io/badge/Business_Intelligence_Thinking-9013FE?style=for-the-badge"></a>
+<a href="#data-storytelling"><img src="https://img.shields.io/badge/Data_Storytelling-4A4A4A?style=for-the-badge"></a>
+
+</div>
 
 ## 🎯 Project Aim
 The objective of this project is to enhance the performance and user experience of "Trip Away," a comprehensive travel aggregator, through in-depth data analysis.
