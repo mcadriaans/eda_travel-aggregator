@@ -1,7 +1,7 @@
 # 📊 Travel Aggregator: Business Impact & Strategic Recommendations  
 ### Insights from Customer, Route, Device, and Booking Behavior Analysis
 
----
+
 
 ## 📅 1. Weekday vs Weekend Booking Behavior
 
@@ -15,7 +15,7 @@
 - 🎟️ Launch **weekend‑specific promotions** (leisure packages, bundled experiences).  
 - 👥 Align **staffing and support** with higher weekday activity.
 
----
+
 
 ## 🏷️ 2. Service Provider Performance (Goibibo, MMT, Yatra)
 
@@ -29,7 +29,7 @@
 - 🔧 MMT: Improve **mobile UX**, run **conversion‑focused campaigns**, review pricing.  
 - 🌱 YATRA: Explore **targeted expansion**, partnerships, or differentiated offerings.
 
----
+
 
 ## ✈️ 3. High‑Demand Routes & Repeat Traveler Behavior
 
@@ -43,7 +43,7 @@
 - 🤝 Increase **seat availability** or negotiate **airline partnerships** on top routes.  
 - 📌 Prioritize **support and operations** for high‑demand corridors.
 
----
+
 
 ## ⏱️ 4. Booking Lead‑Time Patterns
 
@@ -57,7 +57,7 @@
 - 🏅 Early‑planning hubs: Introduce **early‑bird discounts** and loyalty rewards.  
 - 🤝 Bālāpur: Explore **event partnerships**, seasonal campaigns, group travel bundles.
 
----
+
 
 ## 💰 5. Pricing Drivers & Correlation Insights
 
@@ -71,7 +71,7 @@
 - 👥 Introduce **group pricing**, bundled or family offers.  
 - 🎯 Focus promotions on **route characteristics** rather than booking timing.
 
----
+
 
 ## 📱 6. Device Usage & Platform Engagement
 
@@ -87,7 +87,7 @@
 - 🍎 YATRA: Improve **iOS experience** to attract higher‑value customers.  
 - 🚫 All: De‑prioritize tablet; focus on **mobile + desktop**.
 
----
+
 
 ## 📈 7. Quarterly Booking Trends
 
@@ -101,7 +101,7 @@
 - 📲 Strengthen **mobile engagement** (Android + iOS).  
 - 🗓️ Use quarterly trends to refine **seasonal pricing, marketing, and inventory planning**.
 
----
+
 
 ## ✅ Summary
 
