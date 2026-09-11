@@ -1,0 +1,9 @@
+# Ignore Word documents
+*.docx
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+Thumbs.db
+.DS_Store
