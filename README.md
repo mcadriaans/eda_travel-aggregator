@@ -27,12 +27,12 @@ The goal is to uncover actionable insights that improve user experience, optimiz
 ### 📂 Project Structure
 ```
 📁 Data_Analysis_Travel-Aggregator-Analysis
-│── 📂 data                 # Dataset files
-│── 📂 notebook             # Jupyter notebook for EDA
-     │── 📜 business_impact.md          # 
-│── 📜 business_impact.md          # 
-│── 📜 README.md             # Project overview, structure, key findings, and visuals
-│── 📜 requirements.txt      # Python dependencies for running the analysis
+│── 📂 data                                          # Dataset files
+│── 📂 notebook             
+     │── 📜 travel_aggregator_analysis.ipynb        # Complete exploratory analysis, visuals, and insights
+│── 📜 business_impact.md                           # Consolidated business insights & strategic recommendations 
+│── 📜 README.md                                    # Project overview, structure, key findings, and visuals
+│── 📜 requirements.txt                             # Python dependencies for running the analysis
 
 ```
 ### 🛠 Installation & Setup
@@ -50,7 +50,7 @@ The goal is to uncover actionable insights that improve user experience, optimiz
 - **Time Span:** The analysis draws on data spanning a period of more than 3 years, 10 months, and 7 days.
 - **Data Files:**
 
- `Bookings.csv` (Contains booking information)
+ `bookings.csv` (Contains booking information)
 | Column Name        | Description                                    |
 |--------------------|------------------------------------------------|
 | customer_id        | Unique identifier for customers                |
@@ -67,7 +67,7 @@ The goal is to uncover actionable insights that improve user experience, optimiz
 | days_to_departure  | Days left before departure at the time of booking |
 | distance_km        | Distance covered in the booking                |
 
- `Sessions.csv` (Contains search session data)
+ `sessions.csv` (Contains search session data)
 | Column Name        | Description                                    |
 |--------------------|------------------------------------------------|
 | session_id         | Unique session identifier                      |
