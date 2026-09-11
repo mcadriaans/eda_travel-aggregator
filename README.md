@@ -1,29 +1,38 @@
 <div align="center">
 
 # 🌍 Trip Away : Travel Aggregator Analysis
+<!-- Project Banner -->
+<img src="assets/banner_travel_aggregator.png" alt="Travel Aggregator Banner" width="85%">
+<br>
+<!-- Skill Badges -->
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+<img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white">
 
 <br>
+<br>
 
+<!-- Analysis Badges -->
 <a href="#exploratory-data-analysis"><img src="https://img.shields.io/badge/Exploratory_Data_Analysis-4A90E2?style=for-the-badge"></a>
-<a href="#outlier-detection"><img src="https://img.shields.io/badge/Outlier_Detection-D0021B?style=for-the-badge"></a>
-<a href="#funnel-analysis"><img src="https://img.shields.io/badge/Funnel_Analysis-50C878?style=for-the-badge"></a>
-<a href="#segmentation"><img src="https://img.shields.io/badge/Segmentation-F5A623?style=for-the-badge"></a>
-<a href="#behavioral-analytics"><img src="https://img.shields.io/badge/Behavioral_Analytics-7ED321?style=for-the-badge"></a>
-<a href="#business-intelligence-thinking"><img src="https://img.shields.io/badge/Business_Intelligence_Thinking-9013FE?style=for-the-badge"></a>
-<a href="#data-storytelling"><img src="https://img.shields.io/badge/Data_Storytelling-4A4A4A?style=for-the-badge"></a>
+<a href="#key-findings"><img src="https://img.shields.io/badge/Insights-50C878?style=for-the-badge"></a>
+<a href="#visualizations"><img src="https://img.shields.io/badge/Visualizations-F5A623?style=for-the-badge"></a>
+<a href="#project-structure"><img src="https://img.shields.io/badge/Project_Structure-4A4A4A?style=for-the-badge"></a>
 
 </div>
 
 ## 🎯 Project Aim
-The objective of this project is to enhance the performance and user experience of "Trip Away," a comprehensive travel aggregator, through in-depth data analysis.
+This project analyzes customer behavior, booking patterns, device usage, and platform performance for **Trip Away**, a multi‑service travel aggregator.  
+The goal is to uncover actionable insights that improve user experience, optimize route planning, and strengthen platform performance.
 
 ### 📂 Project Structure
 ```
 📁 Data_Analysis_Travel-Aggregator-Analysis
-│── 📂 data               # Dataset files
-│── 📂 notebook           # Jupyter notebook for EDA 
-│── 📜 README.md          # Project documentation
-│── 📜 requirements.txt   # Dependencies
+│── 📂 data                 # Dataset files
+│── 📂 notebook             # Jupyter notebook for EDA
+     │── 📜 business_impact.md          # 
+│── 📜 business_impact.md          # 
+│── 📜 README.md             # Project overview, structure, key findings, and visuals
+│── 📜 requirements.txt      # Python dependencies for running the analysis
 
 ```
 ### 🛠 Installation & Setup
@@ -37,16 +46,6 @@ The objective of this project is to enhance the performance and user experience 
    ```bash
    pip install -r requirements.txt
    ```
-
-## 🥅 Goals
-1. **Analyze Customer Behavior:** Understand booking trends to tailor services to customer needs.
-2. **Identify High-Demand Routes:** Predict peak travel times and popular destinations to optimize resource allocation.
-3. **Detect Anomalies:** Identify and address fraudulent bookings or unusual price fluctuations to ensure platform integrity.
-4. **Improve Conversion Rates:** Enhance the search-to-booking process to increase user engagement and transaction rates.
-5. **Customer Retention & Marketing:** Develop strategies to retain loyal customers and optimize marketing efforts based on data insights.
-
-This data-driven approach leverages Python to extract valuable insights and provide actionable recommendations for improving the platform's efficiency and customer satisfaction.
-
 ## 📋 Data Overview
 - **Time Span:** The analysis draws on data spanning a period of more than 3 years, 10 months, and 7 days.
 - **Data Files:**
@@ -80,55 +79,57 @@ This data-driven approach leverages Python to extract valuable insights and prov
 
 ## 🔍 Key Findings
 
-1. **Count of Unique Entities:**
-- **Unique Bookings:** 339
-- **Unique Sessions:** 331
-- **Unique Searches:** 1360
+### 📊 Dataset Summary
+- **339** unique bookings  
+- **331** unique sessions  
+- **1360** unique searches  
+- **3 years, 10 months, 7 days** of activity
 
-2. **Booking Trends:**
-- **Most Popular Booking Day:** Thursday, with 65 bookings.
-- **Weekend Bookings:** Account for 23.3% of total bookings.
+### 📅 Booking Behavior
+- **Thursday** is the peak booking day (65 bookings)  
+- **Weekend bookings:** 23.3% of total volume
 
-3. **Service Performance:**
-- **Top Service Provider:** GOIBIBO with the highest total bookings and revenue.
-- **Least Performance:** MMT (MakeMyTrip) shows the lowest revenue and bookings.
+### 🏷️ Service Performance
+- **GOIBIBO** leads in bookings + revenue  
+- **MMT** shows the lowest performance  
+- **YATRA** maintains moderate, stable usage
 
-4. **Popular Routes:**
-- **Top Route for Repeat Customers:** Gurgaon to Roissy-en-france.
+### ✈️ Route Demand
+- Most repeated route: **Gurgaon → Roissy-en-France**  
+- Repeat travelers cluster around **Gurgaon** as a major origin hub
 
-5. **Advanced Booking Patterns:**
-- **Top Departure Cities for Advanced Bookings:** Gurgaon, Devanhalli, and Mumbai.
+### ⏱️ Lead-Time Patterns
+- Longest advance bookings from: **Gurgaon**, **Devanhalli**, **Mumbai**
 
-6. **Correlation Analysis:**
-- **Strongest Correlation:** Between `INR_Amount` and `distance_km`, indicating higher costs for longer distances.
+### 📈 Correlation Insights
+- Strongest correlation: **INR_Amount ↔ distance_km**  
+- Passenger count moderately increases total fare
 
-7. **Device Preferences:**
-- **Most Used Device Type:** Varies by service provider. GOIBIBO caters significantly to iOS users, while MMT primarily serves desktop users.
+### 📱 Device Preferences
+- GOIBIBO: strong iOS + desktop + Android usage  
+- MMT: desktop‑heavy  
+- YATRA: balanced Android + desktop
 
-8. **Quarterly Booking Trends:**
-- **Trend:** Fluctuations across different device types with peaks and declines over various quarters.
+### 🗓️ Quarterly Trends
+- Noticeable peak in early **2020** across multiple device types  
+- Gradual decline afterward
 
-
+For detailed business recommendations, see: 👉 `business_impact.md`
 
 ## 📈 Key Visualizations
 
-1. **Distribution of Bookings by Weekday:**
-- Created using a pie chart, highlighting Thursday as the most popular booking day.
+Below are the core visual analyses included in the notebook:
 
-2. **Total Bookings and Revenue per Service:**
-- Bar chart visualizing the total bookings and revenue generated by each service provider.
+- 📅 **Bookings by Weekday** — Pie chart showing Thursday as the peak booking day  
+- 💰 **Bookings & Revenue by Service** — Dual‑axis bar chart comparing platform performance  
+- ✈️ **Top Repeat‑Customer Routes** — Horizontal bar chart of high‑frequency travel corridors  
+- ⏱️ **Lead‑Time Distribution by City** — Box plot showing advance booking behavior  
+- 📉 **Price Sensitivity Curve** — Combined bar + line chart analyzing fare impact  
+- 🔻 **Search → Booking Funnel** — Funnel chart showing a 76% abandonment rate  
 
-3. **Top Routes by Total Bookings for Customers with Multiple Reservations:**
-- Horizontal bar chart showcasing the most booked routes.
+📓 **Full visualizations available in the notebook:**  
+👉 `notebook/travel_aggregator_analysis.ipynb`
 
-4. **Distribution of the Number of Days Between Booking and Departure for Various Cities:**
-- Box plot depicting the advance booking patterns across cities.
-
-5. **Price Sensitivity Analysis:**
-- Combined bar and line chart analyzing how fare price fluctuations affect booking rates.
-
-6. **Search-to-Booking Drop-off Funnel:**
-- Funnel chart visualizing the drop-off from searches to completed bookings with an abandoned search rate of 76%.
 
 
 ## ❗ Conclusion:
