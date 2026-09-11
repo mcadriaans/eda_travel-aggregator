@@ -27,6 +27,8 @@ The goal is to uncover actionable insights that improve user experience, optimiz
 ### 📂 Project Structure
 ```
 📁 Data_Analysis_Travel-Aggregator-Analysis
+│── 📂 assets            
+     │── banner_travel_aggregator.png        
 │── 📂 data                                          # Dataset files
 │── 📂 notebook             
      │── 📜 travel_aggregator_analysis.ipynb        # Complete exploratory analysis, visuals, and insights
