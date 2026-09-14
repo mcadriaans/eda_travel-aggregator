@@ -13,16 +13,15 @@
 <br>
 
 <!-- Analysis Badges -->
-<a href="#exploratory-data-analysis"><img src="https://img.shields.io/badge/Exploratory_Data_Analysis-4A90E2?style=for-the-badge"></a>
-<a href="#key-findings"><img src="https://img.shields.io/badge/Insights-50C878?style=for-the-badge"></a>
-<a href="#visualizations"><img src="https://img.shields.io/badge/Visualizations-F5A623?style=for-the-badge"></a>
-<a href="#project-structure"><img src="https://img.shields.io/badge/Project_Structure-4A4A4A?style=for-the-badge"></a>
+<a href="#-project-aim"><img src="https://img.shields.io/badge/Exploratory_Data_Analysis-4A90E2?style=for-the-badge"></a>
+<a href="#-key-findings"><img src="https://img.shields.io/badge/Insights-50C878?style=for-the-badge"></a>
+<a href="#-key-visualizations"><img src="https://img.shields.io/badge/Visualizations-F5A623?style=for-the-badge"></a>
+<a href="#-project-structure"><img src="https://img.shields.io/badge/Project_Structure-4A4A4A?style=for-the-badge"></a>
 
 </div>
 
 ## 🎯 Project Aim
-This project analyzes customer behavior, booking patterns, device usage, and platform performance for **Trip Away**, a multi‑service travel aggregator.  
-The goal is to uncover actionable insights that improve user experience, optimize route planning, and strengthen platform performance.
+Trip Away is a multi-service travel aggregator, and this project digs into how its customers actually search, book, and behave across the platform. The aim was to understand booking patterns, device habits, and route demand well enough to point to real, usable improvements in user experience, route planning, and overall platform performance.
 
 ### 📂 Project Structure
 ```
@@ -84,7 +83,7 @@ The goal is to uncover actionable insights that improve user experience, optimiz
 ### 📊 Dataset Summary
 - **339** unique bookings  
 - **331** unique sessions  
-- **1360** unique searches  
+- **1,360** unique searches  
 - **3 years, 10 months, 7 days** of activity
 
 ### 📅 Booking Behavior
@@ -101,7 +100,8 @@ The goal is to uncover actionable insights that improve user experience, optimiz
 - Repeat travelers cluster around **Gurgaon** as a major origin hub
 
 ### ⏱️ Lead-Time Patterns
-- Longest advance bookings from: **Gurgaon**, **Devanhalli**, **Mumbai**
+- Cities with the longest **typical** lead times: **New Delhi**, **Bālāpur**, **Madhyamgram**  
+- A handful of individual bookings from Gurgaon, Devanhalli, and Mumbai were made 200+ days out, but those are outliers — most customers from those cities still book close to departure
 
 ### 📈 Correlation Insights
 - Strongest correlation: **INR_Amount ↔ distance_km**  
@@ -116,25 +116,32 @@ The goal is to uncover actionable insights that improve user experience, optimiz
 - Noticeable peak in early **2020** across multiple device types  
 - Gradual decline afterward
 
-For detailed business recommendations, see: 👉 `business_impact.md`
+### 🔻 Search-to-Booking Funnel
+- Out of **1,360** distinct searches, only **338** ended in a completed booking  
+- That's a **75% abandonment rate** — people are searching, they're just not finishing
+
+For detailed business recommendations, see: 👉 [business_impact.md](business_impact.md)
 
 ## 📈 Key Visualizations
 
-Below are the core visual analyses included in the notebook:
+Here's what's covered visually in the notebook:
 
 - 📅 **Bookings by Weekday** — Pie chart showing Thursday as the peak booking day  
 - 💰 **Bookings & Revenue by Service** — Dual‑axis bar chart comparing platform performance  
 - ✈️ **Top Repeat‑Customer Routes** — Horizontal bar chart of high‑frequency travel corridors  
 - ⏱️ **Lead‑Time Distribution by City** — Box plot showing advance booking behavior  
 - 📉 **Price Sensitivity Curve** — Combined bar + line chart analyzing fare impact  
-- 🔻 **Search → Booking Funnel** — Funnel chart showing a 76% abandonment rate  
+- 🔻 **Search → Booking Funnel** — Funnel chart showing a 75% abandonment rate  
 
 📓 **Full visualizations available in the notebook:**  
-👉 `notebook/travel_aggregator_analysis.ipynb`
+👉 [notebook/travel_aggregator_analysis.ipynb](notebook/travel_aggregator_analysis.ipynb)
 
+## 🧩 Challenges
 
+A couple of things came up while building this that are worth mentioning:
 
-## ❗ Conclusion:
-The detailed analysis provided valuable insights into customer behavior, service performance, popular routes, advanced booking patterns, and device preferences. These insights can be leveraged to enhance customer experience, optimize resource allocation, and improve marketing strategies for "Trip Away."
+- **Plotly charts wouldn't display on GitHub.** The interactive charts (the monthly oBSR trend line and the search-to-booking funnel) rendered fine in Colab, but showed up blank once pushed to GitHub. This turned out to be because Plotly's interactive charts rely on JavaScript to render, and GitHub's notebook viewer won't execute embedded JavaScript for security reasons. The fix was installing **Kaleido**, a package that lets Plotly export a chart as a plain static PNG instead of an interactive widget — so the charts you see in this repo are static images generated with Kaleido, while the notebook still produces the interactive versions when run directly in Colab or Jupyter.
+- **Getting consistent "top city" rankings meant checking more than just the extremes.** A couple of early findings, including the original lead-time ranking, were based on the individual bookings with the highest values rather than each city's typical behavior. Grouping by city and comparing medians instead gave a more accurate picture, and the write-up above reflects that correction.
 
-
+## ❗ Conclusion
+This analysis gives Trip Away a clearer picture of who's booking, when, from where, and on what device, along with a good look at where the platform is losing people between a search and a completed booking. The findings here are meant to feed directly into pricing, marketing, and route-planning decisions — the specifics are laid out in `business_impact.md`.
